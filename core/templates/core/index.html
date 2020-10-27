@@ -1,0 +1,47 @@
+{% include 'core/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="hero">
+    <img class="hero-img" src="https://thumbs.dreamstime.com/b/migrant-labour-kolkata-17372430.jpg" alt="Migrant does some hard work what a good migrant" title="Migrant does some hard work what a good migrant">
+    <div class="hero-text">
+        <h1 class="hero-heading">Trip of a lifetime!</h1>
+        <p><strike>Labour</strike> If you want to go to bootcamp, it should be a crime to overlook <span style="font-weight: bolder;">XTREMEBootcamp</span></p>
+        <div class="hero-btn">
+            <input type="date">
+            <button class="book-btn book-btn--normal">Book Trip</button>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="cost">
+        <img src="" alt="">
+        <div class="cost-flex-item">
+            <div class="cost-flex-text">
+                <h2>A gruling experience for only the <span class="toughest"><img class="image-slash" src="{% static 'images/slash.svg' %}" alt="">toughest</span></h2>
+                
+                <p class="flex-para">A once in a life time opportunity <em>(literally!)</em> Participate in hard labour, physically aching activities <span style="font-size: 5px; opacity: 0.3; transform: scale(0.5);">that you sign up for and agree to in our terms and conditions</span> and push yourself to your body's limits.</p>
+                <ul class="options-list">
+                    <li>Just legal accomodation</li>
+                    <li>16 hours of labour per day</li>
+                    <li>Barely adequate food</li>
+                    <li>Just enough health insurance!</li>
+                </ul>
+                <div class="pricing-flex">
+                    <span class="heading">Starting from</span>
+                    <div class="pricing-flex__book">
+                        <h2 class="cost-price">$3200 <span class="time-amount">1 Week</span></h2>
+                        <button style="margin-top: 8px;" class="book-btn book-btn--invert">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cost-flex-img">
+                <figure>
+                    <img draggable="false" class="hero-img" src="https://thumbs.dreamstime.com/b/migrant-labour-kolkata-17372430.jpg" alt="Migrant does some hard work what a good migrant" title="Migrant does some hard work what a good migrant">
+                    <figcaption class="fig-caption">Experience true hard work in our one week program</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XTREMEBootcamp | WE ARE NOT A LABOUR CAMP PLEASE CONTACT OUR LAWYERS</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <div class="nav__brand">
+                <h1><strike>Labour</strike> XTREMEBootcamp</h1>
+                <!-- <small><em>The final solution</em></small> -->
+            </div>
+            <div class="nav__links">
+                <ul>
+                    <span><a href="#">Our Mission</a></span>
+                    <button class="book-btn book-btn--normal">Book Trip</button>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+{% block content %} {% endblock %}
+</body>
+</html>
