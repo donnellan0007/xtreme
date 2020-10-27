@@ -35,9 +35,6 @@ ALLOWED_HOSTS = ['127.0.0.1','https://blogdon.herokuapp.com/','blogdon.herokuapp
 INSTALLED_APPS = [
 
     'core',
-    'ckeditor',
-    'rest_framework',
-    'pwa',
 
     'django.contrib.admin',
     'django.contrib.auth',
