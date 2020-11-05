@@ -1,0 +1,44 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="form-container">
+        <h3>Purchase Trip</h3>
+        <form>
+            <input placeholder="Name" type="text"><br>
+            <input type="date">
+        </form>
+    </div>
+</div>
+
+<style>
+    .form-container {
+        margin: 50px auto;
+        width: 500px;
+        height: 100%;
+        padding: 20px;
+        background: #fafafa;
+        box-shadow: 0 0 15px 0 #ebebeb;
+    }
+    input {
+        width: 100%;
+        border: none; outline: none;
+        transition: 250ms ease-in-out;
+    }
+    input:focus {
+        box-shadow: 0 0 0 3px #ff6868;
+    }
+    input[type="text"] {
+        padding: 10px 10px;
+        margin-bottom: 15px;
+    }
+
+    input[type="date"] {
+        padding: 8px;
+    }
+</style>
+
+{% endblock %}
