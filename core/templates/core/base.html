@@ -13,7 +13,7 @@
     <div class="container">
         <nav class="nav">
             <div class="nav__brand">
-                <h1><strike>Labour</strike> XTREMEBootcamp <small style="font-size: 5px;">FUCK BIDEN</small> <span style="background-image: url(https://i.pinimg.com/474x/c9/b2/38/c9b238d1cc978ed748c7856ed2cbf442.jpg); background-size: 200px 100px;">MAGA! TRUMP 2020!</span> </h1>
+                <h1><strike>Labour</strike> XTREMEBootcamp <small class="tooltip-biden" style="font-size: 5px;">FUCK BIDEN</small> <span id="maga2020" style="background-image: url(https://i.pinimg.com/474x/c9/b2/38/c9b238d1cc978ed748c7856ed2cbf442.jpg); background-size: 200px 100px;">MAGA! TRUMP 2020! <video style="position: absolute; z-index: 5; top: 70px; left: 50%; width: 500px; height: auto; display: none;" loop src="https://video.twimg.com/amplify_video/1323298431088107520/vid/1280x720/ko9kWFOoAhotnGb5.mp4?tag=13"></video> </span> </h1>
                 <!-- <small><em>The final solution</em></small> -->
             </div>
             <div class="nav__links">
@@ -25,6 +25,27 @@
         </nav>
     </div>
 </header>
+
+<script>
+    let video = document.getElementsByTagName('video')[0];
+    let maga = document.getElementById('maga2020');
+
+    maga.addEventListener('mouseover', () => {
+        video.style.display = "inline-block";
+        video.play();
+        document.body.addEventListener('keydown', (e) => {
+            if (e.keyCode == 70) {
+                video.requestFullscreen()
+            }
+        })
+    });
+
+    maga.addEventListener('mouseout', () => {
+        video.style.display = "none";
+        video.pause();
+    });
+
+</script>
 
 {% block content %} {% endblock %}
 </body>

@@ -7,9 +7,12 @@
 <div class="container">
     <div class="form-container">
         <h3>Purchase Trip</h3>
-        <form>
-            <input placeholder="Name" type="text"><br>
-            <input type="date">
+        <form method="POST">
+            {% csrf_token %}
+            <input name="name" placeholder="Name" type="text"><br>
+            <input name="email" placeholder="Email" type="email"><br>
+            <input name="date" type="date">
+            <input type="submit" value="Book">
         </form>
     </div>
 </div>
@@ -21,7 +24,7 @@
         height: 100%;
         padding: 20px;
         background: #fafafa;
-        box-shadow: 0 0 15px 0 #ebebeb;
+        /*box-shadow: 0 0 15px 0 #ebebeb;*/
     }
     input {
         width: 100%;
@@ -31,13 +34,27 @@
     input:focus {
         box-shadow: 0 0 0 3px #ff6868;
     }
-    input[type="text"] {
+    input[type="text"], input[type="email"] {
         padding: 10px 10px;
         margin-bottom: 15px;
     }
-
+    input[type="email"] {
+    }
+    input[type="submit"] {
+        padding: 10px 10px;
+        width: unset !important;
+        background: #ff6868;
+        cursor: pointer;
+        color: white;
+        margin-bottom: 15px;
+    }
     input[type="date"] {
+        border:transparent 3px solid;
         padding: 8px;
+    }
+    input[type="date"]:focus {
+        border:#ff6868 3px solid;
+        box-shadow: unset !important;
     }
 </style>
 
