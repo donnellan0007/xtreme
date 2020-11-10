@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="bomal">
+        <h1>Thank you, {{ name }} for booking with us! Your trip departs on {{ date }} <small style="font-size: 10px;">It will also be your last!</small></h1>
+    </div>
+</div>
+
+<style>
+    .bomal {
+        margin-top: 50px;
+    }
+</style>
+
+{% endblock %}

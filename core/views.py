@@ -19,4 +19,5 @@ def purchase(request):
             'email': email,
             'date': date
         }
+        return render(request, 'core/success.html', context)
     return render(request, 'core/buy.html')

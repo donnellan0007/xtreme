@@ -3,7 +3,8 @@
 {% block content %}
 
 <div class="hero">
-    <img class="hero-img" src="https://thumbs.dreamstime.com/b/migrant-labour-kolkata-17372430.jpg" alt="Migrant does some hard work what a good migrant" title="Migrant does some hard work what a good migrant">
+    <!-- <img class="hero-img" src="https://thumbs.dreamstime.com/b/migrant-labour-kolkata-17372430.jpg" alt="Migrant does some hard work what a good migrant" title="Migrant does some hard work what a good migrant"> -->
+    <video class="hero-img" autoplay style="width: 100%; top: 0; left: 0; right: 0;" muted src="https://video.twimg.com/amplify_video/1323298431088107520/vid/1280x720/ko9kWFOoAhotnGb5.mp4?tag=13"></video>
     <div class="hero-text">
         <h1 class="hero-heading">Trip of a lifetime!</h1>
         <p><strike>Labour</strike> If you want to go to bootcamp, it should be a crime to overlook <span style="font-weight: bolder;">XTREMEBootcamp</span></p>
@@ -31,7 +32,7 @@
                     <span class="heading">Starting from</span>
                     <div class="pricing-flex__book">
                         <h2 class="cost-price">$3200 <span class="time-amount">1 Week</span></h2>
-                        <button style="margin-top: 8px;" class="book-btn book-btn--invert">Book Now</button>
+                        <button style="margin-top: 8px;" class="book-btn book-btn--invert"><a href="{% url 'core:buy' %}">Book Now</a></button>
                     </div>
                 </div>
             </div>
@@ -40,6 +41,34 @@
                     <img draggable="false" class="hero-img" src="https://thumbs.dreamstime.com/b/migrant-labour-kolkata-17372430.jpg" alt="Migrant does some hard work what a good migrant" title="Migrant does some hard work what a good migrant">
                     <figcaption class="fig-caption">Experience true hard work in our one week program</figcaption>
                 </figure>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="margin-top: 4rem;">
+    <div class="testimonials">
+        <div class="testimonials__text">
+            <h1>Testimonials</h1>
+            <div class="test-cont">
+                <div class="testimonial">
+                    <div class="testimonial__img">
+                        <img src="https://i2.cdn.turner.com/money/dam/assets/151008102414-trump-hat-2-640x360.jpg" style="width: 120px; height: 120px;" alt="migrant">
+                    </div>
+                    <div class="testimonial__text">
+                        <h3 style="width: 100%;">Donald Trump</h3>
+                        <p>Absolutely terrific! Amazing people! Would recommend! The FAKE NEWS MEDIA won't report on how tremendously good this is! 5 STARS!</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial__img">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2019/08/bill-clinton-painting.jpg" style="width: 120px; height: 120px;" alt="migrant">
+                    </div>
+                    <div class="testimonial__text">
+                        <h3 style="width: 100%;">Bill Clinton</h3>
+                        <p>The kids were pretty nice. Sucks Jeff wasn't there, he would've had a blast! Wait shit this is being recorded? Fuck. I <em>did not</em> have sexual relations with <strike>that woman</strike> those children</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -84,7 +113,7 @@
             <h1>So what are you waiting for?</h1>
             <div class="hero-btn">
                 <input class="light-bg-input" style="box-shadow: 0 0 0 3px #233023; color: #233023;" type="date">
-                <button class="book-btn book-btn--invert">Book Trip</button>
+                <button class="book-btn book-btn--invert"><a href="{% url 'core:buy' %}">Book Trip</a></button>
             </div>
         </div>
     </div>

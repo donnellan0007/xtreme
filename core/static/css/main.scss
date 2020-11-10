@@ -62,6 +62,9 @@ body {
     border-radius: 4px;
     font-size: 1rem;
     transition: all 275ms ease-in-out;
+    a {
+        color: var(--col);
+    }
     &--normal {
         --col: white;
         --box-shad: 0 0 0 3px white;
@@ -76,6 +79,31 @@ body {
         &:hover {
             --col: white !important;
             background: #ff6868 !important;
+        }
+    }
+}
+
+.testimonials {
+    &__text {
+        .test-cont {
+            display: flex;
+            gap: 20px;
+        }
+        .testimonial {
+            &:nth-of-type(1) {
+                border-right: 1px solid gray;
+            }
+            width: 50%;
+            margin-top: 30px;
+            display: flex;
+            &__img {
+                img {
+                    border-radius: 50%;
+                }
+            }
+            &__text {
+                margin-left: 20px;
+            }
         }
     }
 }

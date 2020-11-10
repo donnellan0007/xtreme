@@ -13,13 +13,13 @@
     <div class="container">
         <nav class="nav">
             <div class="nav__brand">
-                <h1><strike>Labour</strike> XTREMEBootcamp <small class="tooltip-biden" style="font-size: 5px;">FUCK BIDEN</small> <span id="maga2020" style="background-image: url(https://i.pinimg.com/474x/c9/b2/38/c9b238d1cc978ed748c7856ed2cbf442.jpg); background-size: 200px 100px;">MAGA! TRUMP 2020! <video style="position: absolute; z-index: 5; top: 70px; left: 50%; width: 500px; height: auto; display: none;" loop src="https://video.twimg.com/amplify_video/1323298431088107520/vid/1280x720/ko9kWFOoAhotnGb5.mp4?tag=13"></video> </span> </h1>
+                <h1><strike>Labour</strike> <a style="color: white;" href="{% url 'core:index' %}">XTREMEBootcamp</a> <small class="tooltip-biden" style="font-size: 5px;">FUCK BIDEN</small> <span id="maga2020" style="background-image: url(https://i.pinimg.com/474x/c9/b2/38/c9b238d1cc978ed748c7856ed2cbf442.jpg); background-size: 200px 100px;">MAGA! TRUMP 2020! <video style="position: absolute; z-index: 5; top: 70px; left: 50%; width: 500px; height: auto; display: none;" loop src="https://video.twimg.com/amplify_video/1323298431088107520/vid/1280x720/ko9kWFOoAhotnGb5.mp4?tag=13"></video> </span> <span style="font-size: 10px;">Jeffery Eipstein cleansed as of March!</span></h1>
                 <!-- <small><em>The final solution</em></small> -->
             </div>
             <div class="nav__links">
                 <ul>
                     <span><a href="#">Our Mission</a></span>
-                    <button class="book-btn book-btn--normal">Book Trip</button>
+                    <button class="book-btn book-btn--normal"><a href="{% url 'core:buy' %}"> Book Trip</a></button>
                 </ul>
             </div>
         </nav>
@@ -34,8 +34,11 @@
         video.style.display = "inline-block";
         video.play();
         document.body.addEventListener('keydown', (e) => {
+            //alert(e.keyCode)
             if (e.keyCode == 70) {
                 video.requestFullscreen()
+            } else if (e.keyCode == 77) {
+                video.muted
             }
         })
     });
